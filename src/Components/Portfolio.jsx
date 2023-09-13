@@ -19,9 +19,8 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
 
-const imageAltText = "desktop with books and laptop";
+const imageAltText = "Digitl cloud";
 
 /**
  * Project list
@@ -29,52 +28,77 @@ const imageAltText = "desktop with books and laptop";
  * An array of objects that will be used to display for your project
  * links section. Below is a sample, update to reflect links you'd like to highlight.
  */
+
+/*
+TimeBooker (September 2022 - Current)
+The project is aimed to simplify the schedule 
+management of small enterprises that need to book 
+appointments that include employees and clients. 
+Position: Developer.
+Platform: Microsoft Azure.
+Languages: C#, JavaScript.
+Environment: .NET 6, ASP .NET Core, Blazor 
+WebAssembly, Azure Functions, Node.js.
+Humanitarian (February 2022 – September 2022)
+This is an application that should help in supplying 
+humanitarian aid to Ukrainians. 
+Position: Developer.
+Platform: Microsoft Azure, Azure Storage, Sql Azure, 
+Docker.
+Languages: C#.
+Environment: .NET 6, ASP .NET Core, Blazor 
+WebAssembly, Blazor Server, GitHub actions.
+REMT (January 2021 – February 2022)
+The main idea of the project is to provide users with the 
+ability to configure documents (forms for data collection) 
+and fill them out on mobile devices. 
+Position: Developer.
+Platform: Microsoft Azure, Azure Service Bus, Azure 
+Storage.
+Languages: C#.
+Environment: .NET 6, ASP .NET Core, Blazor 
+WebAssembly, Azure Functions, Azure DevOps 
+pipeline
+*/
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
-    description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+    title: "TimeBooker",
+    position: "Developer",
+    period: "September 2022 - Current",
+    description: "The project is aimed to simplify the schedule management of small enterprises that need to book appointments that include employees and clients.",
+    stack: "C#, JavaScript, .NET 6, ASP .NET Core, Blazor WebAssembly, Azure Functions, Node.js",
   },
   {
-    title: "Web Development for Beginners",
-    description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+    title: "Humanitarian",
+    position: "Developer",
+    period: "February 2022 – September 2022",
+    description: "This is an application that should help in supplying humanitarian aid to Ukrainians.",
+    stack: "C#, .NET 6, ASP .NET Core, Blazor WebAssembly, Blazor Server, GitHub actions",
   },
   {
-    title: "My Resume Site",
-    description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
-  },
-  {
-    title: "GitHub Codespaces and github.dev",
-    description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
-  },
+    title: "REMT",
+    position: "Developer",
+    period: "January 2021 – February 2022",
+    description: "The main idea of the project is to provide users with the ability to configure documents (forms for data collection) and fill them out on mobile devices.",
+    stack: "C#, .NET 6, ASP .NET Core, Blazor WebAssembly, Azure Functions, Azure DevOps pipeline",
+  }
 ];
 
 const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
-            src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
-            alt={imageAltText}
-          />
-        </div>
+      <h2 style={{ textAlign: "center" }}>Experience</h2>
+      <div style={{ display: "flex", flexDirection: "row", paddingTop: "2rem" }}>
         <div className="container">
           {projectList.map((project) => (
             <div className="box" key={project.title}>
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
+              <div>
                 <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
-              </a>
+              </div>
+              <p className="small">{project.period}</p>
+              <p className="small">{project.position} position</p>
               <p className="small">{project.description}</p>
+              <p className="small">Stack: {project.stack}</p>
             </div>
           ))}
         </div>
