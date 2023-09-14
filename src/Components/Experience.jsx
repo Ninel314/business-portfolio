@@ -29,37 +29,7 @@ const imageAltText = "Digitl cloud";
  * links section. Below is a sample, update to reflect links you'd like to highlight.
  */
 
-/*
-TimeBooker (September 2022 - Current)
-The project is aimed to simplify the schedule 
-management of small enterprises that need to book 
-appointments that include employees and clients. 
-Position: Developer.
-Platform: Microsoft Azure.
-Languages: C#, JavaScript.
-Environment: .NET 6, ASP .NET Core, Blazor 
-WebAssembly, Azure Functions, Node.js.
-Humanitarian (February 2022 – September 2022)
-This is an application that should help in supplying 
-humanitarian aid to Ukrainians. 
-Position: Developer.
-Platform: Microsoft Azure, Azure Storage, Sql Azure, 
-Docker.
-Languages: C#.
-Environment: .NET 6, ASP .NET Core, Blazor 
-WebAssembly, Blazor Server, GitHub actions.
-REMT (January 2021 – February 2022)
-The main idea of the project is to provide users with the 
-ability to configure documents (forms for data collection) 
-and fill them out on mobile devices. 
-Position: Developer.
-Platform: Microsoft Azure, Azure Service Bus, Azure 
-Storage.
-Languages: C#.
-Environment: .NET 6, ASP .NET Core, Blazor 
-WebAssembly, Azure Functions, Azure DevOps 
-pipeline
-*/
+
 const projectList = [
   {
     title: "TimeBooker",
@@ -84,9 +54,9 @@ const projectList = [
   }
 ];
 
-const Portfolio = () => {
+const Experience = () => {
   return (
-    <section className="padding" id="portfolio">
+    <section className="padding" id="experience">
       <h2 style={{ textAlign: "center" }}>Experience</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "2rem" }}>
         <div className="container">
@@ -107,4 +77,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Experience;

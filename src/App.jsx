@@ -10,7 +10,8 @@ import About from "./Components/About";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
-import Portfolio from "./Components/Portfolio";
+import Experience from "./Components/Experience";
+import Education from "./Components/Education";
 
 import "./styles.css";
 
@@ -40,7 +41,8 @@ const App = () => {
       <Header />
       <Home name={siteProps.name} title={siteProps.title} />
       <About />
-      <Portfolio />
+      <Education />
+      <Experience />
       <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
     </div>
   );
