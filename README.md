@@ -1,4 +1,4 @@
-Hi guys! you can find my portfolio here: https://gentle-grass-019671f10.4.azurestaticapps.net/
+Hi guys! you can find my CV here: https://gentle-grass-019671f10.4.azurestaticapps.net/
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=526682619)
 
